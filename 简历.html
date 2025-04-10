@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页</title>
+  <link rel="icon" href="bitbug_favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow-md py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://picsum.photos/50/50?random=1" alt="头像" class="rounded-full mr-4">
+        <h1 class="text-2xl font-bold">Alex</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#about" class="hover:text-gray-600">关于我</a></li>
+          <li><a href="#projects" class="hover:text-gray-600">我的作品</a></li>
+          <li><a href="#contact" class="hover:text-gray-600">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">关于我</h2>
+        <p class="text-gray-600 mb-8">唯庸 | AI Agent 布道者</p>
+        <p class="text-gray-600 mb-8">数字游民 · 开源社区主理人 · 效率革命推动者</p>
+        <p class="text-gray-600 mb-8">前字节跳动AI产品经理（参与豆包/剪映/扣子底层模型能力数据支持）</p>
+        <p class="text-gray-600 mb-8">现AI智能体培训讲师（3000+学员认证）</p>
+        <p class="text-gray-600 mb-8">独立产品经理</p>
+        <p class="text-gray-600 mb-8">Agent 101开源社区主理人</p>
+        <p class="text-gray-600 mb-8">AI编程蓝皮书共创作者 / Coze社区核心开发者</p>
+      </div>
+    </section>
+
+    <section id="projects" class="py-12 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">我的作品</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://picsum.photos/400/300?random=2" alt="作品1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">春节红包封面生成工具</h3>
+              <p class="text-gray-600 mb-4">https://hongbao.agent101.cn/</p>
+              <a href="https://hongbao.agent101.cn/" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">查看</a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://picsum.photos/400/300?random=3" alt="作品2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">决明子-AI辅助决策工具</h3>
+              <p class="text-gray-600 mb-4">https://jueming.agent101.cn/</p>
+              <a href="https://jueming.agent101.cn/" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">查看</a>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="https://picsum.photos/400/300?random=4" alt="作品3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Agent 101 智能体指北</h3>
+              <p class="text-gray-600 mb-4">https://agent101.feishu.cn/wiki/KLarwIA1piLrBYk7bf2cBf3HnNe</p>
+              <a href="https://agent101.feishu.cn/wiki/KLarwIA1piLrBYk7bf2cBf3HnNe" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">查看</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">联系我</h2>
+        <div class="flex justify-center space-x-4 mb-8">
+          <a href="https://okjk.co/GzVOHr" class="text-gray-600 hover:text-gray-800">
+            <i class="fab fa-jira"></i>
+          </a>
+          <a href="https://space.bilibili.com/3546742760934321" class="text-gray-600 hover:text-gray-800">
+            <i class="fab fa-bilibili"></i>
+          </a>
+          <a href="https://agent101.cn/" class="text-gray-600 hover:text-gray-800">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+        <p class="text-center text-gray-600">微信: wangweiyong0219</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 唯庸. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // 添加平滑滚动效果
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
